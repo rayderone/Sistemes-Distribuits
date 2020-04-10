@@ -7,10 +7,8 @@
 Implementar un algorisme que ens permeti paral·lelitzar la multiplicació de matrius utilitzant el núvol. Ja que a casa tenim només 16 cores, i en el núvol podem arribar a tenir-na 100 o més. Per aquest motiu en la pràctica ens demanen implementació i l’execució d’una multiplicació de matrius en el núvol.
 
 En aquest problema de multiplicació de matrius ens demanen resoldre-ho fent ús de IBM Cloud. Aquest servei ens dona funcionalitats necessàries per la pràctica, utilitzarem les següents utilitats: Object storage i Cloud function. 
- <p align="center">
- <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
+<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
 *Funcionament de la multiplicació entre matrius*
- </p>
 
 ### Estructura
 
@@ -58,14 +56,10 @@ Per últim tenim time per a poder contar el temps d’execució per a tots els p
 #### Temps d'execució
 
 Els resultats que hem obtingut mostren com al augmentar la mida de les matrius, el temps d'execució augmenta de manera quasi lineal.
-<p align="center">
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
-*Aquest temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
-</p>
-<p align="center">
+*Aquests temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime2.png"/>
 *Gràfic de temps, Workers utilitzats per treball a repartir.*
-</p>
 
 Com podem veure en el gràfic, cada barra representa un número exacte de workers. Sota les barres hi ha el número d’operacions que fan i fins on arriba la barra és el temps que tarda en realitzar-la en segons. Cada barra és el promig de segons que tarden tots els workers en fer les operacions amb diferents valors:
 
@@ -82,9 +76,7 @@ Com podem veure en 185185 desapareix el worker, això és degut a la falta de me
 #### SpeedUp
 
 A partir dels resultats que hem obtingut, podem observar que a mesura que augmenta la mida de les matrius, l'speedup també augmenta, això és degut a que, en les matrius més petites, el volum de dades amb el que treballen cada un dels workers, és més petit, això provoca que pràcticament es trigui més estona en descarregar i rebre les dades, que en fer les pròpies multiplicacions, degut a que establir les connexions per fer la transmissió de les dades, introdueix un retard considerable
-<p align="center">
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/SpeedUp.png"/>
-</p>
 
 ### Referències
 
