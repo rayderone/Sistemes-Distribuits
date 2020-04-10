@@ -7,7 +7,7 @@
 Implementar un algorisme que ens permeti paral·lelitzar la multiplicació de matrius utilitzant el núvol. Ja que a casa tenim només 16 cores, i en el núvol podem arribar a tenir-na 100 o més. Per aquest motiu en la pràctica ens demanen implementació i l’execució d’una multiplicació de matrius en el núvol.
 
 En aquest problema de multiplicació de matrius ens demanen resoldre-ho fent ús de IBM Cloud. Aquest servei ens dona funcionalitats necessàries per la pràctica, utilitzarem les següents utilitats: Object storage i Cloud function. 
-<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
+<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/Explanation.png"/>
 
 *Funcionament de la multiplicació entre matrius*
 
