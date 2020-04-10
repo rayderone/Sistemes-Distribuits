@@ -8,7 +8,7 @@ Implementar un algorisme que ens permeti paral·lelitzar la multiplicació de ma
 
 En aquest problema de multiplicació de matrius ens demanen resoldre-ho fent ús de IBM Cloud. Aquest servei ens dona funcionalitats necessàries per la pràctica, utilitzarem les següents utilitats: Object storage i Cloud function. 
 
- ![img](https://lh3.googleusercontent.com/3J5y6HtdQUyDekdcL9KdGf3KNhxd9iePWiwdznzAC_GlU9GLxArkZXXIx6gUcVSPh6W2jXhqzFHnXa-9o1-xcNZOnxyW1eAj4u19J2RG9y2ymsAq1ZpVlf4sodWZZuR6MBD5k-jP)
+ ![img](https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/Explanation.png)
 
 *Funcionament de la multiplicació entre matrius*
 
@@ -59,11 +59,11 @@ Per últim tenim time per a poder contar el temps d’execució per a tots els p
 
 Els resultats que hem obtingut mostren com al augmentar la mida de les matrius, el temps d'execució augmenta de manera quasi lineal.
 
-<img src="/home/milax/.config/Typora/typora-user-images/image-20200408225033614.png" alt="image-20200408225033614"  />
+<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png" alt="image-20200408225033614"  />
 
 *Aquest temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
 
-![img](https://lh3.googleusercontent.com/yIG4a44i384gUZ26bv7swZBeg8NSs9E1qXT96cVU8qmpS1DpInL_bRa_ODmnvHE8cpvnMeE3GlAVto7fe-xKX69OL2l8f12Cw_n8lpYBdzP3kNOadmlr7ULXYGhry9iHXOknVyJ2)*Gràfic de temps, Workers utilitzats per treball a repartir.*
+<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime2.png" alt="image-20200408225033614"  />*Gràfic de temps, Workers utilitzats per treball a repartir.*
 
 Com podem veure en el gràfic, cada barra representa un número exacte de workers. Sota les barres hi ha el número d’operacions que fan i fins on arriba la barra és el temps que tarda en realitzar-la en segons. Cada barra és el promig de segons que tarden tots els workers en fer les operacions amb diferents valors:
 
@@ -81,7 +81,7 @@ Com podem veure en 185185 desapareix el worker, això és degut a la falta de me
 
 A partir dels resultats que hem obtingut, podem observar que a mesura que augmenta la mida de les matrius, l'speedup també augmenta, això és degut a que, en les matrius més petites, el volum de dades amb el que treballen cada un dels workers, és més petit, això provoca que pràcticament es trigui més estona en descarregar i rebre les dades, que en fer les pròpies multiplicacions, degut a que establir les connexions per fer la transmissió de les dades, introdueix un retard considerable
 
-<img src="/home/milax/.config/Typora/typora-user-images/image-20200408052703956.png" alt="image-20200408052703956"  />
+<img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/SpeedUp.png" alt="image-20200408052703956"  />
 
 
 
