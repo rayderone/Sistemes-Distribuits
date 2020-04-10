@@ -8,6 +8,7 @@ Implementar un algorisme que ens permeti paral·lelitzar la multiplicació de ma
 
 En aquest problema de multiplicació de matrius ens demanen resoldre-ho fent ús de IBM Cloud. Aquest servei ens dona funcionalitats necessàries per la pràctica, utilitzarem les següents utilitats: Object storage i Cloud function. 
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
+
 *Funcionament de la multiplicació entre matrius*
 
 ### Estructura
@@ -57,8 +58,10 @@ Per últim tenim time per a poder contar el temps d’execució per a tots els p
 
 Els resultats que hem obtingut mostren com al augmentar la mida de les matrius, el temps d'execució augmenta de manera quasi lineal.
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
+
 *Aquests temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime2.png"/>
+
 *Gràfic de temps, Workers utilitzats per treball a repartir.*
 
 Com podem veure en el gràfic, cada barra representa un número exacte de workers. Sota les barres hi ha el número d’operacions que fan i fins on arriba la barra és el temps que tarda en realitzar-la en segons. Cada barra és el promig de segons que tarden tots els workers en fer les operacions amb diferents valors:
