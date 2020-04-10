@@ -7,6 +7,7 @@
 Implementar un algorisme que ens permeti paral·lelitzar la multiplicació de matrius utilitzant el núvol. Ja que a casa tenim només 16 cores, i en el núvol podem arribar a tenir-na 100 o més. Per aquest motiu en la pràctica ens demanen implementació i l’execució d’una multiplicació de matrius en el núvol.
 
 En aquest problema de multiplicació de matrius ens demanen resoldre-ho fent ús de IBM Cloud. Aquest servei ens dona funcionalitats necessàries per la pràctica, utilitzarem les següents utilitats: Object storage i Cloud function. 
+
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/Explanation.png"/>
 
 *Funcionament de la multiplicació entre matrius*
@@ -61,6 +62,7 @@ Els resultats que hem obtingut mostren com al augmentar la mida de les matrius, 
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
 
 *Aquests temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
+
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime2.png"/>
 
 *Gràfic de temps, Workers utilitzats per treball a repartir.*
@@ -80,6 +82,7 @@ Com podem veure en 185185 desapareix el worker, això és degut a la falta de me
 #### SpeedUp
 
 A partir dels resultats que hem obtingut, podem observar que a mesura que augmenta la mida de les matrius, l'speedup també augmenta, això és degut a que, en les matrius més petites, el volum de dades amb el que treballen cada un dels workers, és més petit, això provoca que pràcticament es trigui més estona en descarregar i rebre les dades, que en fer les pròpies multiplicacions, degut a que establir les connexions per fer la transmissió de les dades, introdueix un retard considerable
+
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/SpeedUp.png"/>
 
 ### Referències
