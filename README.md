@@ -57,6 +57,7 @@ Per últim tenim time per a poder contar el temps d’execució per a tots els p
 #### Temps d'execució
 
 Els resultats que hem obtingut mostren com al augmentar la mida de les matrius, el temps d'execució augmenta de manera quasi lineal.
+
 <img src="https://raw.githubusercontent.com/rayderone/Sistemes-Distribuits/master/images/ExecutionTime.png"/>
 
 *Aquests temps corresponen a l'execució seqüencial de la multiplicació de matrius amb 1 sol worker.*
