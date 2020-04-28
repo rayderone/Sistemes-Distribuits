@@ -10,11 +10,11 @@ config = {'pywren' : {'storage_bucket' : 'urvbucket'},
 
           'ibm_cf':  {'endpoint': 'https://eu-gb.functions.cloud.ibm.com', 
                       'namespace': 'adria.ribas@estudiants.urv.cat_dev', 
-                      'api_key': 'c4b8698b-aa44-4a49-a6f0-b231f9cfd2ae:I8oY3vVJeZOIc0TEP1dJmeHO3o1ZV7jCDPwmPvakzpMc3vrdmgYmWtTDLqmoyHjQ'}, 
+                      'api_key': ''}, 
 
           'ibm_cos': {'endpoint': 'https://s3.eu-gb.cloud-object-storage.appdomain.cloud',
                       'private_endpoint': 'https://s3.private.eu-gb.cloud-object-storage.appdomain.cloud',
-                      'api_key': '-k3E4W-hzX4YaWW_Dopxem1MuPQciEMJNFIsIVv-yFUQ'}}
+                      'api_key': ''}}
 
 # Objecte per a gestionar el COS
 cos = CosBackend()
