@@ -5,8 +5,8 @@ class CosBackend:
 
     def __init__(self):
         service_endpoint = 'https://s3.eu-gb.cloud-object-storage.appdomain.cloud'
-        secret_key = '4a051d71ed25a31f180c0d5887c063da0831c53f9040ac43'
-        acces_key = 'e73ce711c7b045bfb959f19d9314d8b8'
+        secret_key = ''
+        acces_key = ''
         client_config = ibm_botocore.client.Config(max_pool_connections=200, user_agent_extra='pywren-ibm-cloud')
         self.cos_client = ibm_boto3.client('s3', aws_access_key_id=acces_key, aws_secret_access_key=secret_key, config=client_config, endpoint_url=service_endpoint)
 
